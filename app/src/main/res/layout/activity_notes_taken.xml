@@ -11,6 +11,8 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_notes"
         android:layout_width="match_parent"
+        app:title="@string/app_name"
+        android:background="@color/app_bg_color"
         android:layout_height="?attr/actionBarSize">
 
         <RelativeLayout
@@ -23,9 +25,12 @@
                 android:layout_height="?attr/actionBarSize"
                 android:layout_alignParentEnd="true"
                 android:background="@android:color/transparent"
-                android:padding="8dp"
-                android:src="@drawable/ic_save"
-                app:tint="@color/gray" />
+                android:padding="15dp"
+                android:src="@drawable/ic_done"
+                app:tint="@color/white" />
+
+
+
 
         </RelativeLayout>
 
@@ -33,10 +38,11 @@
 
     <EditText
         android:id="@+id/editText_title"
-        android:hint="Title..."
+        android:hint="Title"
         android:padding="8dp"
         android:textStyle="bold"
-        android:textSize="20sp"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
         android:layout_marginHorizontal="10dp"
         android:textColor="@color/black"
         android:singleLine="true"
@@ -49,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText_notes"
-        android:hint="Start typing"
+        android:hint="Start typing..."
         android:layout_marginHorizontal="10dp"
         android:background="@android:color/transparent"
         android:textColorHint="@color/gray"

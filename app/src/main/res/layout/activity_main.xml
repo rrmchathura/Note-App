@@ -8,33 +8,44 @@
     android:background="@color/background_bg"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.AppCompat.Toolbar"
+        android:layout_width="match_parent"
+        app:titleTextColor="@color/white"
+        app:titleMarginStart="16dp"
+        android:background="@color/app_bg_color"
+        android:layout_height="wrap_content" />
+
     <RelativeLayout
         android:id="@+id/mainRl"
+        android:layout_below="@id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/top"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="70dp"
             android:scaleType="centerCrop"
             android:src="@drawable/home_bg_shape" />
 
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView_home"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/search_bg_new"
+            android:backgroundTint="@color/white"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search Notes......."
+            app:searchIcon="@drawable/ic_search" />
+
     </RelativeLayout>
 
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/searchView_home"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/search_bg_new"
-        android:backgroundTint="@color/white"
-        app:iconifiedByDefault="false"
-        app:searchIcon="@drawable/ic_search"
-        app:queryHint="Search Notes......." />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_home"

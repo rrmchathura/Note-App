@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 
 import com.rrmchathura.note_app.Models.Notes;
@@ -24,6 +25,10 @@ public class NotesTakenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityNotesTakenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        setSupportActionBar(binding.toolbarNotes);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic__arrow_back);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         notes = new Notes();
 
@@ -68,4 +73,12 @@ public class NotesTakenActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return super.onSupportNavigateUp();
+
+    }
+
 }
