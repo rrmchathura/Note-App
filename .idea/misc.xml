@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/git_projects/Note-App/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
-        <entry key="..\:/git_projects/Note-App/app/src/main/res/layout/activity_notes_taken.xml" value="0.22826086956521738" />
-        <entry key="..\:/git_projects/Note-App/app/src/main/res/layout/notes_list.xml" value="0.22826086956521738" />
+        <entry key="..\:/git_projects/Note-App/app/src/main/res/drawable/home_bg_shape.xml" value="0.103" />
+        <entry key="..\:/git_projects/Note-App/app/src/main/res/drawable/ic__arrow_back.xml" value="0.1" />
+        <entry key="..\:/git_projects/Note-App/app/src/main/res/drawable/ic_search.xml" value="0.103" />
+        <entry key="..\:/git_projects/Note-App/app/src/main/res/drawable/search_bg_new.xml" value="0.103" />
+        <entry key="..\:/git_projects/Note-App/app/src/main/res/layout/activity_main.xml" value="0.136" />
+        <entry key="..\:/git_projects/Note-App/app/src/main/res/layout/activity_notes_taken.xml" value="0.176" />
+        <entry key="..\:/git_projects/Note-App/app/src/main/res/layout/activity_splash.xml" value="0.176" />
+        <entry key="..\:/git_projects/Note-App/app/src/main/res/layout/notes_list.xml" value="0.12" />
+        <entry key="..\:/git_projects/Note-App/app/src/main/res/menu/popup_menu.xml" value="0.25" />
       </map>
     </option>
   </component>
