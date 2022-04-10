@@ -22,13 +22,13 @@
                 android:id="@+id/textView_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
                 android:ellipsize="marquee"
                 android:marqueeRepeatLimit="marquee_forever"
                 android:padding="8dp"
                 android:scrollHorizontally="true"
                 android:singleLine="true"
                 android:text="Title"
+                android:layout_toStartOf="@id/imageView_pin"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -37,6 +37,7 @@
                 android:id="@+id/imageView_pin"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:layout_margin="5dp"
                 android:layout_alignParentEnd="true" />
 
         </RelativeLayout>

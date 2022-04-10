@@ -10,6 +10,9 @@
 
 
     <color name="gray">#242B2E</color>
+    <color name="app_bg_color">#FF0034</color>
+    <color name="background_bg">#f2f4f7</color>
+    <color name="yellow">#FFD800</color>
 
     <color name="color1">#31AEE4</color>
     <color name="color2">#FFEB3B</color>
